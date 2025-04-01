@@ -13,3 +13,6 @@ for(let i =0 ; i<arr.length;i++){
 }
 if(index == -1) console.log("Element not found");
 else console.log("Element found at index at " + index+' index');
+
+// Time Complexity: O(n)
+// Space Complexity: O(1)
