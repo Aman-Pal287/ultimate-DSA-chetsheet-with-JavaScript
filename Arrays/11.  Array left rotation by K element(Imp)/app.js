@@ -39,14 +39,38 @@ const prompt = require('prompt-sync')();
 
 
 // method 3 : efficient tarika
-let arr = [1,2,3,4,5]
-let temp = new Array(arr.length);
-let k = prompt('enter a number : ')
-k = k % arr.length;
-for (let i=0 ; i<arr.length;i++){
-    temp[i] = arr[(i+k)%arr.length]
-}
-console.log(temp);
+// let arr = [1,2,3,4,5]
+// let temp = new Array(arr.length);
+// let k = prompt('enter a number : ')
+// k = k % arr.length;
+// for (let i=0 ; i<arr.length;i++){
+//     temp[i] = arr[(i+k)%arr.length]
+// }
+// console.log(temp);
 
 // Time Complexity: O(n)
 // Space Complexity: O(n)
+
+
+// method 4(block-swap reverse algorithm): method 3 se bhi optimize solution aur effiecnt tarika (two pointer algorithm reverse ka tarika se banayenge ye solution)
+
+let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let k = prompt("enter a number : ");
+reverse(arr, 0, k - 1);
+reverse(arr, k, arr.length - 1);
+reverse(arr, 0, arr.length - 1);
+
+
+function reverse(arr , i ,j) {
+   while(i<j){
+    let temp = arr[i];
+    arr[i] =arr[j];
+    arr[j] = temp;
+    j--;
+    i++;
+   }
+}
+console.log(arr);
+
+// Time Complexity: O(n)
+// Space Complexity: O(1)
