@@ -16,3 +16,17 @@
 // }
 // console.log(ans);
 
+
+//method:2 using map and effienct approach
+let names = ["Mary", "John", "Emma"];
+let heights = [180, 165, 170];
+let map = new Map()
+for(let i=0;i<heights.length;i++){
+    map.set(heights[i] , names[i]);
+}
+heights.sort((a,b)=>b-a);
+let ans = new Array(names.length);
+for(let i=0 ;i<ans.length;i++){
+    ans[i] = map.get(heights[i])
+}
+console.log(ans);
