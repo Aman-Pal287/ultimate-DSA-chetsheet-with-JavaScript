@@ -62,35 +62,7 @@ class LinkList {
         temp.next = temp.next.next
 
     }
-    // insertAtPosition(position, val) {
-    //     if (position < 0 || position > this.size) {
-    //         console.log("invalid Position");
-    //         return
-    //     }
-    //     if (position == 0) {
-    //         this.insertAtFirst(val)
-    //         return
-    //     }
 
-    //     if (position == this.size) {
-    //         this.insertAtLast(val)
-    //         return
-    //     }
-
-    //     const newNode = new Node(val)
-    //     let temp = this.head
-    //     let count = 0
-
-    //     while (count < position - 1) {
-    //         temp = temp.next
-    //         count++
-    //     }
-
-    //     newNode.next = temp.next
-    //     temp.next = newNode
-    //     this.size++
-
-    // }
 
     insertAtPosition(index, val) {
         if (index < 0 || index > this.size) {
