@@ -134,3 +134,27 @@ obj.insertAtPosition(2, 250)
 obj.deletetAtIndex(2)
 
 obj.printLL()
+
+
+
+//!---------------------
+
+
+/*
+!bhaiya kya in future aapka aur mera koi networking ke list mein aapka naam hoga kya ya aap humsab ko chor doge?☹
+1.) bhaiya kya in future aapka aur mera koi networking ke list mein aapka naam hoga kya ya aap humsab ko chor doge?☹
+
+
+2.)
+
+
+3.)
+
+
+4.)
+
+
+
+
+
+*/ 
